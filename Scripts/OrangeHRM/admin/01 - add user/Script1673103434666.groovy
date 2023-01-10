@@ -28,13 +28,12 @@ WebUI.click(findTestObject('Object Repository/OrangeHRM/admin/button_Add'))
 
 WebUI.click(findTestObject('Object Repository/OrangeHRM/admin/div_-- Select --User Role'))
 
-WebUI.sendKeys(findTestObject('Object Repository/OrangeHRM/admin/div_-- Select --User Role'), 'Admin')
+WebUI.click(findTestObject('Object Repository/OrangeHRM/admin/list_userRole', [ ('userRole') : userRole ] ))
 
-//object paramaterize
-//WebUI.click(findTestObject('Object Repository/OrangeHRM/admin/list_userRole', [ ('userRole') : userRole ] ))
-//
-//WebUI.click(findTestObject('Object Repository/OrangeHRM/admin/div_-- Select --Status'))
-//
-//WebUI.click(findTestObject('Object Repository/OrangeHRM/admin/list_status', [ ('status') : status ] ))
+WebUI.click(findTestObject('Object Repository/OrangeHRM/admin/div_-- Select --Status'))
+
+WebUI.click(findTestObject('Object Repository/OrangeHRM/admin/list_status', [ ('status') : status ] ))
+
+
 
 
