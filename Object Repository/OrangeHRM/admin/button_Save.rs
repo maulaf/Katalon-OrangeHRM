@@ -6,15 +6,19 @@
    <elementGuidId>479ef6ce-800a-403d-9b94-7012d1f2c5bb</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>CSS</key>
+         <value>button.oxd-button.oxd-button--medium.oxd-button--secondary.orangehrm-left-space</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
          <value>//button[@type='submit']</value>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value>button.oxd-button.oxd-button--medium.oxd-button--secondary.orangehrm-left-space</value>
+         <key>BASIC</key>
+         <value>//*[@type = 'submit' and (text() = ' Save ' or . = ' Save ')]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>48c73511-e053-4c31-9c62-c8113d91d8b8</webElementGuid>
+      <webElementGuid>2d8717f5-6d7d-4601-adb5-7b492f651cbd</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,7 +34,7 @@
       <name>type</name>
       <type>Main</type>
       <value>submit</value>
-      <webElementGuid>c66a9fee-2fdc-4683-a17a-ee219d60c39e</webElementGuid>
+      <webElementGuid>ac49d6d2-fb08-4e83-8293-e47b4908fe96</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +42,7 @@
       <name>class</name>
       <type>Main</type>
       <value>oxd-button oxd-button--medium oxd-button--secondary orangehrm-left-space</value>
-      <webElementGuid>e010d113-c505-4d31-87c6-623722067146</webElementGuid>
+      <webElementGuid>17ba93b4-c6b0-4e00-9c9b-473200f8c2fe</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +50,7 @@
       <name>text</name>
       <type>Main</type>
       <value> Save </value>
-      <webElementGuid>f218343e-56f4-41fe-80d0-e1224df81a85</webElementGuid>
+      <webElementGuid>a0f24423-6cd0-434b-89d3-91f183abc74d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +58,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;app&quot;)/div[@class=&quot;oxd-layout&quot;]/div[@class=&quot;oxd-layout-container&quot;]/div[@class=&quot;oxd-layout-context&quot;]/div[@class=&quot;orangehrm-background-container&quot;]/div[@class=&quot;orangehrm-card-container&quot;]/form[@class=&quot;oxd-form&quot;]/div[@class=&quot;oxd-form-actions&quot;]/button[@class=&quot;oxd-button oxd-button--medium oxd-button--secondary orangehrm-left-space&quot;]</value>
-      <webElementGuid>aa01f170-a1c9-4d86-acf5-4280e75cac7e</webElementGuid>
+      <webElementGuid>da7f8c26-f083-41a2-b370-c7f051493fcd</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -62,7 +66,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//button[@type='submit']</value>
-      <webElementGuid>15a4c14e-3343-46e0-ad8b-859ede6108e9</webElementGuid>
+      <webElementGuid>6851c373-218e-443f-8761-e1abae9a1023</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +74,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='app']/div/div[2]/div[2]/div/div/form/div[3]/button[2]</value>
-      <webElementGuid>8f5d502f-830a-4140-9c8d-989f3d04e416</webElementGuid>
+      <webElementGuid>ac2c3a34-9263-428c-93d5-0c7507e49b6a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +82,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Confirm Password'])[1]/following::button[2]</value>
-      <webElementGuid>d646b9dc-ee8a-4fd5-abee-db222e65c7f1</webElementGuid>
+      <webElementGuid>b47d75c4-056b-449b-80e6-59967ba09d42</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +90,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='OrangeHRM, Inc'])[1]/preceding::button[1]</value>
-      <webElementGuid>7fa85530-48db-49c9-bc48-00842fec27e4</webElementGuid>
+      <webElementGuid>d986f41f-f679-44b9-92c9-5a9aa9a9ab8f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +98,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Capture object:'])[1]/preceding::button[1]</value>
-      <webElementGuid>be82eafc-bc8f-4031-a80b-d27689dceb4b</webElementGuid>
+      <webElementGuid>3ae58d37-cd65-42f1-8814-c4b051f4e5c2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +106,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Save']/parent::*</value>
-      <webElementGuid>417516b3-b70d-43b1-8ff8-c4188fdb5e14</webElementGuid>
+      <webElementGuid>a557017a-b5ba-4fbd-9b04-974dd7704af5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +114,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//button[2]</value>
-      <webElementGuid>aea676e1-f64d-46a1-9919-99e36f64b766</webElementGuid>
+      <webElementGuid>ab7866a6-c69e-4dd1-b01b-4e34d8364d00</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,6 +122,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//button[@type = 'submit' and (text() = ' Save ' or . = ' Save ')]</value>
-      <webElementGuid>b45787cb-2557-4def-ba4c-1de7ff2f5870</webElementGuid>
+      <webElementGuid>b277a009-16a1-4a1b-ba9e-730fc2c37ddf</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSuiteEntity>
+   <description></description>
+   <name>add user</name>
+   <tag></tag>
+   <isRerun>false</isRerun>
+   <mailRecipient></mailRecipient>
+   <numberOfRerun>0</numberOfRerun>
+   <pageLoadTimeout>30</pageLoadTimeout>
+   <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
+   <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <rerunImmediately>false</rerunImmediately>
+   <testSuiteGuid>76c0efd6-fd70-49b1-bd48-e6a72c931fc0</testSuiteGuid>
+   <testCaseLink>
+      <guid>a2790ee5-cb59-4ebc-9fa0-88c0f97e49b9</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/OrangeHRM/login/01 - login admin</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>751c39c2-612e-4a9c-b446-b00adeda1b52</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/OrangeHRM/admin/01 - add user</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>99f8e4bf-be75-42dc-b218-2c013fa3bde8</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/OrangeHRM/admin/user-excel</testDataId>
+      </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId>99f8e4bf-be75-42dc-b218-2c013fa3bde8</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>userRole</value>
+         <variableId>b8837c69-3854-42f0-a325-1effe11abfc1</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>99f8e4bf-be75-42dc-b218-2c013fa3bde8</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>status</value>
+         <variableId>c549fcbe-c5e9-4960-94ed-23921e5f6f79</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>99f8e4bf-be75-42dc-b218-2c013fa3bde8</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>name</value>
+         <variableId>e324f82e-7f9c-458a-8de3-da5cf861de45</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>99f8e4bf-be75-42dc-b218-2c013fa3bde8</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>password</value>
+         <variableId>b84fb85b-d795-4bb5-a14a-524c1baa09ab</variableId>
+      </variableLink>
+   </testCaseLink>
+</TestSuiteEntity>

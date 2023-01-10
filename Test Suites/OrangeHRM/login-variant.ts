@@ -23,7 +23,7 @@
             <iterationType>ALL</iterationType>
             <value></value>
          </iterationEntity>
-         <testDataId>Data Files/OrangeHRM/login/login-variant</testDataId>
+         <testDataId>Data Files/OrangeHRM/login/login-variant-db</testDataId>
       </testDataLink>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>

@@ -17,6 +17,18 @@
       <value></value>
       <variableId>c549fcbe-c5e9-4960-94ed-23921e5f6f79</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>e324f82e-7f9c-458a-8de3-da5cf861de45</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>b84fb85b-d795-4bb5-a14a-524c1baa09ab</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>'Admin'</defaultValue>
       <description></description>
@@ -30,5 +42,19 @@
       <id>c549fcbe-c5e9-4960-94ed-23921e5f6f79</id>
       <masked>false</masked>
       <name>status</name>
+   </variable>
+   <variable>
+      <defaultValue>'Chrystal  Johnson'</defaultValue>
+      <description></description>
+      <id>e324f82e-7f9c-458a-8de3-da5cf861de45</id>
+      <masked>false</masked>
+      <name>name</name>
+   </variable>
+   <variable>
+      <defaultValue>'Maulaf123#'</defaultValue>
+      <description></description>
+      <id>b84fb85b-d795-4bb5-a14a-524c1baa09ab</id>
+      <masked>false</masked>
+      <name>password</name>
    </variable>
 </TestCaseEntity>
