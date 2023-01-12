@@ -51,9 +51,10 @@ String username = RandomStringUtils.randomAlphabetic(8)
 
 WebUI.setText(findTestObject('Object Repository/OrangeHRM/admin/input_Username'), username)
 
-//WebUI.selectOptionByIndex(findTestObject('Object Repository/OrangeHRM/admin/input_Employee Name'), 1)
+username = WebUI.getAttribute(findTestObject('Object Repository/OrangeHRM/admin/input_Username'), 'value')
 
-//WebUI.sendKeys(findTestObject('Object Repository/OrangeHRM/admin/input_Employee Name'), Keys.chord(Keys.DOWN, Keys.ENTER))
+WebUI.comment(username)
+
 
 String [][] detailUser = [['Password', password], ['Confirm Password', password]]
 
