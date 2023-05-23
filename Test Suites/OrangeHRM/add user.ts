@@ -16,7 +16,6 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/OrangeHRM/login/01 - login admin</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>751c39c2-612e-4a9c-b446-b00adeda1b52</guid>
@@ -32,7 +31,6 @@
          </iterationEntity>
          <testDataId>Data Files/OrangeHRM/admin/user-excel</testDataId>
       </testDataLink>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId>99f8e4bf-be75-42dc-b218-2c013fa3bde8</testDataLinkId>
          <type>DATA_COLUMN</type>

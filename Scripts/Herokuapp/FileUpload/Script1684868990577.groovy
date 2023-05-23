@@ -17,21 +17,13 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser(GlobalVariable.url)
+WebUI.openBrowser('https://the-internet.herokuapp.com/upload')
 
 WebUI.maximizeWindow()
 
-WebUI.takeScreenshot()
+WebUI.uploadFile(findTestObject('Object Repository/Herokuapp/input_File Uploader_file'), 'C:\\Users\\ASUS\\git\\OrangeHRM\\orangeHRM\\Data\\foto.jpg')
 
-WebUI.setText(findTestObject('Object Repository/OrangeHRM/login/input_Username_username'), GlobalVariable.username)
 
-WebUI.setText(findTestObject('Object Repository/OrangeHRM/login/input_Password_password'), GlobalVariable.password)
 
-WebUI.takeScreenshot()
 
-WebUI.click(findTestObject('Object Repository/OrangeHRM/login/button_Login'))
-
-WebUI.verifyElementPresent(findTestObject('Object Repository/OrangeHRM/login/h6_Dashboard'), 10)
-
-WebUI.takeScreenshot()
 
