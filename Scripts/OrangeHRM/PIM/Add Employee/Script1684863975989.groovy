@@ -76,3 +76,5 @@ println("Date one year after the current date: " + formattedDate)
 
 WebUI.setText(findTestObject('Object Repository/OrangeHRM/PIM/input_License Expiry Date'), formattedDate)
 
+
+WebUI.comment(formattedDate)
