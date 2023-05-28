@@ -6,7 +6,7 @@
    <UUID>12918fe1-d69a-406e-b0dc-b5a655a30e68</UUID>
    <migratedVersion>5.9.0</migratedVersion>
    <pageLoadTimeout>0</pageLoadTimeout>
-   <projectFileLocation>C:\Users\ASUS\git\OrangeHRM\orangeHRM\BDD Project.prj</projectFileLocation>
+   <projectFileLocation>C:\Users\fetty\git\OrangeHRM\orangeHRM\BDD Project.prj</projectFileLocation>
    <sourceContent>
       <sourceFolderList>
          <sourceFolderConfiguration>
@@ -25,5 +25,6 @@
          </systemFolderConfiguration>
       </systemFolderList>
    </sourceContent>
+   <timeStampInProperties>true</timeStampInProperties>
    <type>WEBUI</type>
 </Project>

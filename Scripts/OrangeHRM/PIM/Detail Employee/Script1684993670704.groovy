@@ -3,9 +3,7 @@ import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
-import java.nio.file.Paths as Paths
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
-import com.kms.katalon.core.configuration.RunConfiguration as RunConfiguration
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
 import com.kms.katalon.core.model.FailureHandling as FailureHandling
@@ -17,42 +15,34 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
-import org.apache.commons.lang.RandomStringUtils as RandomStringUtils
 import org.openqa.selenium.Keys as Keys
-import java.nio.file.Path as Path
-
+import java.text.SimpleDateFormat as SimpleDateFormat
+import java.util.Calendar as Calendar
 
 WebUI.callTestCase(findTestCase('OrangeHRM/login/01 - login admin'), [:], FailureHandling.STOP_ON_FAILURE)
 
-TestData data = findTestData('Data Files/employee')
+WebUI.callTestCase(findTestCase('OrangeHRM/PIM/Add Employee'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('OrangeHRM/PIM/span_PIM'))
+// Get the current date
+Calendar calendar = Calendar.getInstance()
 
-WebUI.click(findTestObject('OrangeHRM/PIM/button_Add'))
+// Add one year to the current date
+calendar.add(Calendar.YEAR, 1)
 
-WebUI.setText(findTestObject('OrangeHRM/PIM/input_Employee Full Name_firstName'), data.getValue('firstName', 1))
+// Get the date one year after the current date
+Date oneYearAfter = calendar.time
 
-WebUI.setText(findTestObject('OrangeHRM/PIM/input_Employee Full Name_middleName'), data.getValue('middleName', 1))
+// Define the date format
+SimpleDateFormat dateFormat = new SimpleDateFormat('yyyy-MM-dd')
 
-WebUI.setText(findTestObject('OrangeHRM/PIM/input_Employee Full Name_lastName'), data.getValue('lastName', 1))
+// Format the date
+String formattedDate = dateFormat.format(oneYearAfter)
 
-WebUI.sendKeys(findTestObject('OrangeHRM/PIM/input_Employee Id'), Keys.chord(Keys.CONTROL, 'a', Keys.BACK_SPACE))
+WebUI.setText(findTestObject('Object Repository/OrangeHRM/PIM/input_License Expiry Date'), formattedDate)
 
-def randomId = RandomStringUtils.randomNumeric(5)
+WebUI.click(findTestObject('Object Repository/OrangeHRM/PIM/div_-- Select --Nationality'))
 
-WebUI.setText(findTestObject('OrangeHRM/PIM/input_Employee Id'), randomId)
+WebUI.click(findTestObject('Object Repository/OrangeHRM/PIM/option_Nationality'))
 
-String projectDir = RunConfiguration.getProjectDir()
 
-println('Project Directory: ' + projectDir)
-
-WebUI.uploadFile(findTestObject('OrangeHRM/PIM/uploadFoto'), projectDir + '/Data/foto.png')
-
-WebUI.takeScreenshot()
-
-WebUI.click(findTestObject('Object Repository/OrangeHRM/PIM/button_Save'))
-
-WebUI.verifyTextPresent('Success', true)
-
-WebUI.takeFullPageScreenshot()
 
