@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>option_Nationality</name>
+   <name>option_Martial Status</name>
    <tag></tag>
-   <elementGuidId>874a2307-3637-4b21-bc8c-b48da7f4a2b1</elementGuidId>
+   <elementGuidId>5f10bfdd-5014-4662-b9df-790cdce53aba</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[(text() = '${nationality}' or . = '${nationality}')]</value>
+         <value>//*[(text() = '${martial}' or . = '${martial}')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>${nationality}</value>
-      <webElementGuid>58b086f4-5b43-4a29-b5a0-1b6fdc02a843</webElementGuid>
+      <value>${martial}</value>
+      <webElementGuid>7eab7c29-118a-4020-998f-66967dfe3602</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

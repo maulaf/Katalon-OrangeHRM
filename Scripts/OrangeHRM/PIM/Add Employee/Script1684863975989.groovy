@@ -21,7 +21,6 @@ import org.apache.commons.lang.RandomStringUtils as RandomStringUtils
 import org.openqa.selenium.Keys as Keys
 import java.nio.file.Path as Path
 
-
 WebUI.callTestCase(findTestCase('OrangeHRM/login/01 - login admin'), [:], FailureHandling.STOP_ON_FAILURE)
 
 TestData data = findTestData('Data Files/employee')
@@ -46,13 +45,37 @@ String projectDir = RunConfiguration.getProjectDir()
 
 println('Project Directory: ' + projectDir)
 
-WebUI.uploadFile(findTestObject('OrangeHRM/PIM/uploadFoto'), projectDir + '/Data/foto.png')
+WebUI.uploadFile(findTestObject('OrangeHRM/PIM/uploadFile'), projectDir + '/Data/foto.png')
 
 WebUI.takeScreenshot()
 
-WebUI.click(findTestObject('Object Repository/OrangeHRM/PIM/button_Save'))
+WebUI.click(findTestObject('OrangeHRM/PIM/toggle_Create Login Details'))
 
-WebUI.verifyTextPresent('Success', true)
+def valueFirstName = WebUI.getAttribute(findTestObject('OrangeHRM/PIM/input_Employee Full Name_firstName'), 'value')
+
+def valueLastName = WebUI.getAttribute(findTestObject('OrangeHRM/PIM/input_Employee Full Name_lastName'), 'value')
+
+WebUI.setText(findTestObject('OrangeHRM/PIM/input_Username'), valueFirstName + valueLastName)
+
+//WebUI.click(findTestObject('OrangeHRM/PIM/label_Enabled'))
+
+WebUI.click(findTestObject('Object Repository/OrangeHRM/PIM/rb_Status', [('status') : 'Enabled']))
+
+
+
+
+def uppercaseChars = RandomStringUtils.random(4, 'QWERTYUIOPASDFHJKLZXCVBNM') // Generate 4 uppercase letters
+def lowercaseChars = RandomStringUtils.random(4, 'qwertyuiopasdfghjklzxcvbnm') // Generate 4 lowercase letters
+def symbols = RandomStringUtils.random(2, '!@#$%^&*()') // Generate 2 symbols
+def numbers = RandomStringUtils.randomNumeric(2) // Generate 2 numbers
+
+def allChars = uppercaseChars + lowercaseChars + symbols + numbers
+
+WebUI.setText(findTestObject('OrangeHRM/PIM/input_Password'), allChars)
+
+WebUI.setText(findTestObject('OrangeHRM/PIM/input_Confirm Password'), allChars)
+
+WebUI.click(findTestObject('Object Repository/OrangeHRM/PIM/button_Save'))
 
 WebUI.takeFullPageScreenshot()
 
