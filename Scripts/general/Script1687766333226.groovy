@@ -16,9 +16,38 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import java.util.Random;
 
-WebUI.openBrowser('https://the-internet.herokuapp.com/upload')
+import java.util.Random;
 
-WebUI.maximizeWindow()
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
-WebUI.uploadFile(findTestObject('Object Repository/Herokuapp/input_File Uploader_file'), 'C:\\Users\\ASUS\\git\\OrangeHRM\\orangeHRM\\Data\\foto.jpg')
+//Calendar now = Calendar.getInstance();
+//int month = now.get(Calendar.MONTH) + 1;  // Ingat, nilai bulan dimulai dari 0
+//
+//SimpleDateFormat monthFormat = new SimpleDateFormat("MM");
+//String monthString = monthFormat.format(now.getTime());
+
+
+LocalDate now = LocalDate.now();
+int year = now.getYear();
+int month = now.getMonthValue();
+int day = now.getDayOfMonth();
+
+String yearString = String.valueOf(year);
+
+DateTimeFormatter monthFormatter = DateTimeFormatter.ofPattern("MMMM");
+String monthString = now.format(monthFormatter);
+
+String dayString = String.valueOf(day);
+
+System.out.println("Year: " + yearString);
+System.out.println("Month: " + monthString);
+System.out.println("Day: " + dayString);
+
+
+
+Random random = new Random();
+def randomNumber = random.nextInt(32768);
+System.out.println(randomNumber);

@@ -61,7 +61,12 @@ WebUI.setText(findTestObject('OrangeHRM/PIM/input_Username'), valueFirstName + v
 
 WebUI.click(findTestObject('Object Repository/OrangeHRM/PIM/rb_Status', [('status') : 'Enabled']))
 
-
+//def uppercaseChars = RandomStringUtils.random(4, 65, 90, true, true) // Generate 4 uppercase letters
+//def lowercaseChars = RandomStringUtils.random(4, 97, 122, true, true) // Generate 4 lowercase letters
+//def symbols = RandomStringUtils.random(2, 33, 47, false, false) // Generate 2 symbols
+//def numbers = RandomStringUtils.randomNumeric(2) // Generate 2 numbers
+//
+//def allChars = uppercaseChars + lowercaseChars + symbols + numbers
 
 
 def uppercaseChars = RandomStringUtils.random(4, 'QWERTYUIOPASDFHJKLZXCVBNM') // Generate 4 uppercase letters

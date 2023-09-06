@@ -17,8 +17,5 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('https://the-internet.herokuapp.com/upload')
+CucumberKW.runFeatureFile('Include/features/employeeManagement/employeeManagement.feature')
 
-WebUI.maximizeWindow()
-
-WebUI.uploadFile(findTestObject('Object Repository/Herokuapp/input_File Uploader_file'), 'C:\\Users\\ASUS\\git\\OrangeHRM\\orangeHRM\\Data\\foto.jpg')
