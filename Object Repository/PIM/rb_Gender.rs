@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>rb_Gender</name>
+   <tag></tag>
+   <elementGuidId>ce6883ea-6387-4aa1-8b7a-da4a836151f4</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//label[(text() = '${gender}' or . = '${gender}')]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>${gender}</value>
+      <webElementGuid>6156e67e-6352-43ef-9328-fc73c34b744d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>label</value>
+      <webElementGuid>26cd99f2-2e58-4b42-a3a9-eb5962cfd3e9</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>div_-- Select -- Martial Status</name>
+   <name>div_-- Select --Nationality</name>
    <tag></tag>
-   <elementGuidId>7cb9897a-c388-4646-b28b-96669560b06e</elementGuidId>
+   <elementGuidId>43ccb450-4a24-44b4-9aea-abcd1809bdd2</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
@@ -11,7 +11,11 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='app']/div/div[2]/div[2]/div/div/div/div[2]/div/form/div[3]/div/div[2]/div/div[2]/div/div</value>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Nationality'])[1]/following::div[3]</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@class = 'oxd-select-text oxd-select-text--focus']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,23 +26,23 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>ab006bb4-4e7c-4700-8e9e-0ef51d25e59e</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>class</name>
-      <type>Main</type>
-      <value>oxd-select-text oxd-select-text--focus</value>
-      <webElementGuid>2861fa61-b8bc-47e5-856b-fe5c063d003b</webElementGuid>
+      <webElementGuid>eb7c9fc9-d36a-4c82-b8e3-830c61dce834</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>oxd-select-text oxd-select-text--focus</value>
+      <webElementGuid>d5285c1f-ae11-487e-aa50-f025ae480886</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
       <value>-- Select --</value>
-      <webElementGuid>bda4be90-9361-45d0-9baa-cfbadd297b4a</webElementGuid>
+      <webElementGuid>c86344aa-671a-44d3-9a52-c30b44c94599</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,39 +50,39 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;app&quot;)/div[@class=&quot;oxd-layout&quot;]/div[@class=&quot;oxd-layout-container&quot;]/div[@class=&quot;oxd-layout-context&quot;]/div[@class=&quot;orangehrm-background-container&quot;]/div[@class=&quot;orangehrm-card-container&quot;]/div[@class=&quot;orangehrm-edit-employee&quot;]/div[@class=&quot;orangehrm-edit-employee-content&quot;]/div[@class=&quot;orangehrm-horizontal-padding orangehrm-vertical-padding&quot;]/form[@class=&quot;oxd-form&quot;]/div[@class=&quot;oxd-form-row&quot;]/div[@class=&quot;oxd-grid-3 orangehrm-full-width-grid&quot;]/div[@class=&quot;oxd-grid-item oxd-grid-item--gutters&quot;]/div[@class=&quot;oxd-input-group oxd-input-field-bottom-space&quot;]/div[2]/div[@class=&quot;oxd-select-wrapper&quot;]/div[@class=&quot;oxd-select-text oxd-select-text--focus&quot;]</value>
-      <webElementGuid>c2b685c9-08c0-4dfa-b0e4-782a3913bb0c</webElementGuid>
+      <webElementGuid>4f6e5ea5-5adb-4b47-8c50-e4992862b177</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='app']/div/div[2]/div[2]/div/div/div/div[2]/div/form/div[3]/div/div[2]/div/div[2]/div/div</value>
-      <webElementGuid>1215d342-5642-43ef-9dfc-3496c39b88ed</webElementGuid>
+      <value>//div[@id='app']/div/div[2]/div[2]/div/div/div/div[2]/div/form/div[3]/div/div/div/div[2]/div/div</value>
+      <webElementGuid>a1b5edf7-2ac3-41b4-ac7f-1fcf71c3525c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Marital Status'])[1]/following::div[3]</value>
-      <webElementGuid>5b4f9cb8-69ae-4b23-9f0a-b1abe5ccd989</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Nationality'])[1]/following::div[3]</value>
+      <webElementGuid>9c310d22-1aa0-4487-a825-bacd66d1562e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='-- Select --'])[1]/following::div[7]</value>
-      <webElementGuid>1734988b-0164-4845-bf99-0ee0138379e7</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='SIN Number'])[1]/following::div[9]</value>
+      <webElementGuid>634594cc-e4c6-45c9-8bd9-88966b93085d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[3]/div/div[2]/div/div[2]/div/div</value>
-      <webElementGuid>8dc13987-6bc0-48a2-a157-a4cca23adb78</webElementGuid>
+      <value>//div[3]/div/div/div/div[2]/div/div</value>
+      <webElementGuid>9fb754ac-f9ce-4a7c-81fd-7caf741fa325</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,6 +90,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//div[(text() = '-- Select --' or . = '-- Select --')]</value>
-      <webElementGuid>668a299f-a9b0-4ddf-8ed7-ebdbe42d65d7</webElementGuid>
+      <webElementGuid>bf4e5d36-21ac-45bf-9e67-227a58dff88a</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

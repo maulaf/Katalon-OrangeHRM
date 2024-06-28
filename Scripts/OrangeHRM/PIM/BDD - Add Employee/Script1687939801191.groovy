@@ -17,18 +17,5 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser(GlobalVariable.url)
+CucumberKW.runFeatureFile('Include/features/employeeManagement/employeeManagement.feature')
 
-WebUI.maximizeWindow()
-
-<<<<<<< HEAD:Scripts/login/Log_TC.003 - Login with Empty Username/Script1719548287604.groovy
-WebUI.setText(findTestObject('login/input_Password_password'), GlobalVariable.password)
-
-WebUI.click(findTestObject('login/button_Login'))
-
-WebUI.verifyTextPresent("Required", false)
-
-WebUI.takeFullPageScreenshot()
-=======
-WebUI.uploadFile(findTestObject('Object Repository/Herokuapp/input_File Uploader_file'), 'C:\\Users\\ASUS\\git\\OrangeHRM\\orangeHRM\\Data\\foto.jpg')
->>>>>>> origin/master:Scripts/Herokuapp/FileUpload/Script1684868990577.groovy

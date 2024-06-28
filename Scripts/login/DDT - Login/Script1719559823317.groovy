@@ -27,6 +27,6 @@ WebUI.setText(findTestObject('login/input_Password_password'), password)
 
 WebUI.click(findTestObject('login/button_Login'))
 
-WebUI.verifyTextPresent('Required', false)
+WebUI.verifyTextPresent(expectedText, false)
 
-WebUI.takeScreenshot()
+WebUI.takeFullPageScreenshot()

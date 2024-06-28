@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>03 - login variant</name>
+   <name>DDT - Login</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>10e527c8-8b17-4fdd-8e27-7174b5080fdf</testCaseGuid>
    <variable>
-      <defaultValue>''</defaultValue>
+      <defaultValue>'Admin'</defaultValue>
       <description></description>
       <id>66d9a52e-abf0-4f1c-a479-496367769302</id>
       <masked>false</masked>
       <name>username</name>
    </variable>
    <variable>
-      <defaultValue>''</defaultValue>
+      <defaultValue>'admin123'</defaultValue>
       <description></description>
       <id>a7de34ad-da12-49cd-a2d0-94c8af60045f</id>
       <masked>false</masked>
       <name>password</name>
+   </variable>
+   <variable>
+      <defaultValue>'Dashboard'</defaultValue>
+      <description></description>
+      <id>1b207af1-98c3-4db9-8b4a-6435256ab554</id>
+      <masked>false</masked>
+      <name>expectedText</name>
    </variable>
 </TestCaseEntity>
