@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>BUZZ_TC.011 - Shares Photos - Add Photos with Invalid File</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c348fbd1-8051-437d-b096-1fda2aed8d1c</testCaseGuid>
+</TestCaseEntity>

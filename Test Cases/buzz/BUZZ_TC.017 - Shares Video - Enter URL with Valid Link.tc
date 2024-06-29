@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>BUZZ_TC.017 - Shares Video - Enter URL with Valid Link</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>be9811da-c23f-4036-aa77-b0f9996dae41</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>BUZZ_TC.015 - Shares Video - Shares With Empty URL</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ec5c0cf9-1aab-4b57-96aa-501ac444ee54</testCaseGuid>
+</TestCaseEntity>

@@ -38,8 +38,8 @@ class general_TestListener {
 	 */
 	@AfterTestCase
 	def sampleAfterTestCase(TestCaseContext testCaseContext) {
-		WebUI.refresh()
-		WebUI.click(findTestObject('Object Repository/login/h6_Dashboard'))
+		WebUI.takeFullPageScreenshot()
+		WebUI.closeBrowser()
 	}
 
 	/**
