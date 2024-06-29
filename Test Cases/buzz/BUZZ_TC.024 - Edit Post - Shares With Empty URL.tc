@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>BUZZ_TC.024 - Edit Post - Shares With Empty URL</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>4ab59bfe-75a4-4011-b22f-55dc56f85136</testCaseGuid>
+</TestCaseEntity>

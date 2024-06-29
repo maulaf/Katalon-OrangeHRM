@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>btn_Post</name>
+   <name>dialog_btnPost</name>
    <tag></tag>
-   <elementGuidId>abfbe046-dbba-4849-a048-64891f83078c</elementGuidId>
+   <elementGuidId>def8e343-f6d4-4a76-8e5b-af1559cd0c2b</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//button[@type='submit']</value>
+         <value>//div[@role='document']//button[@type='submit']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

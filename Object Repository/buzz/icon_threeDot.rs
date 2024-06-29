@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_URL</name>
+   <name>icon_threeDot</name>
    <tag></tag>
-   <elementGuidId>5a91f60c-6b21-408b-90ff-c693c4f53586</elementGuidId>
+   <elementGuidId>e63f522d-49bc-4aec-b864-4edef1b81a80</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@placeholder = 'Paste Video URL']</value>
+         <value>//*[@class = 'oxd-icon bi-three-dots']</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@role='document']/form/div[2]/div[2]/textarea</value>
+         <value></value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>placeholder</name>
+      <name>class</name>
       <type>Main</type>
-      <value>Paste Video URL</value>
+      <value>oxd-icon bi-three-dots</value>
    </webElementProperties>
 </WebElementEntity>

@@ -17,16 +17,19 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.click(findTestObject('Object Repository/buzz/menu_Buzz'))
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import org.openqa.selenium.Keys
 
-WebUI.click(findTestObject('Object Repository/buzz/btn_Shares Video'))
+CustomKeywords.'buzz.buzzKeyword.createPostVideo'()
 
-WebUI.setText(findTestObject('Object Repository/buzz/dialog_textareaPost'), 'test')
+WebUI.click(findTestObject('Object Repository/buzz/icon_threeDot'))
 
-url = "https://www.youtube.com/watch?v=PVUCnmnHI8s"
+WebUI.click(findTestObject('buzz/btn_Edit Post'))
 
-WebUI.setText(findTestObject('Object Repository/buzz/input_URL'), url)
+WebUI.waitForElementPresent(findTestObject('Object Repository/buzz/input_URL'), 0)
 
-WebUI.click(findTestObject('Object Repository/buzz/btn_Share'))
+WebUI.setText(findTestObject('Object Repository/buzz/input_URL'), Keys.chord(Keys.CONTROL, 'a', Keys.BACK_SPACE))
 
-WebUI.verifyElementText(findTestObject('general/toast'), 'Successfully Saved')
+WebUI.click(findTestObject('Object Repository/buzz/dialog_btnPost'))
+
+WebUI.verifyTextPresent('Required', false)

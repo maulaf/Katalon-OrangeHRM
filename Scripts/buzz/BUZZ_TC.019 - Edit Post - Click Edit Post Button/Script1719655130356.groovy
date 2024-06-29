@@ -17,3 +17,14 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+WebUI.click(findTestObject('Object Repository/buzz/menu_Buzz'))
+
+WebUI.click(findTestObject('Object Repository/buzz/icon_threeDot'))
+
+WebUI.click(findTestObject('buzz/btn_Edit Post'))
+
+WebUI.verifyElementPresent(findTestObject('Object Repository/buzz/dialog'), 0)
+
+headerDialog = WebUI.getText(findTestObject('Object Repository/buzz/dialog_Header'))
+
+headerDialog == "Edit Post"

@@ -26,10 +26,10 @@ WebUI.setText(findTestObject('Object Repository/buzz/dialog_textareaPost'), '')
 
 def dirProject = RunConfiguration.getProjectDir()
 
-def file = dirProject + '/images/wallpaper.jpg'
+def file = dirProject + '/Test Data/wallpaper.jpg'
 
 WebUI.uploadFile(findTestObject('Object Repository/buzz/addPhotos'), file)
 
 WebUI.click(findTestObject('Object Repository/buzz/btn_Share'))
 
-WebUI.verifyElementText(findTestObject('Object Repository/toast'), 'Successfully Saved')
+WebUI.verifyElementText(findTestObject('general/toast'), 'Successfully Saved')

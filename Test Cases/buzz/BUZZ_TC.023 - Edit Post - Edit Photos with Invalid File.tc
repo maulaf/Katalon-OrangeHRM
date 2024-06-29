@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>BUZZ_TC.023 - Edit Post - Edit Photos with Invalid File</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c019b071-a54f-4ee5-9735-d82b1953f64e</testCaseGuid>
+</TestCaseEntity>

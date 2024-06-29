@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>BUZZ_TC.020 - Edit Post - Edit With Empty Text</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>cdf91859-295d-46e0-9c8a-868a5e60d2a3</testCaseGuid>
+</TestCaseEntity>

@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>btn_Post</name>
+   <name>btn_Yes Delete</name>
    <tag></tag>
-   <elementGuidId>abfbe046-dbba-4849-a048-64891f83078c</elementGuidId>
+   <elementGuidId>3f53ca98-34d6-4c0d-84b3-9d72652885cc</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//button[@type='submit']</value>
+         <value>//button[text()=' Yes, Delete ']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

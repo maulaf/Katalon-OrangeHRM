@@ -19,4 +19,4 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.click(findTestObject('Object Repository/buzz/menu_Buzz'))
 
-WebUI.verifyElementNotPresent(findTestObject('Object Repository/toast'), 0)
+WebUI.verifyElementNotPresent(findTestObject('general/toast'), 0)

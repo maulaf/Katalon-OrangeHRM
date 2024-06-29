@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>BUZZ_TC.025 - Edit Post - Enter URL with Invalid Link</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e6de654a-b358-4b88-b50f-39adf2c43304</testCaseGuid>
+</TestCaseEntity>

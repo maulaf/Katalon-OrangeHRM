@@ -10,6 +10,7 @@ import com.kms.katalon.core.model.FailureHandling as FailureHandling
 import com.kms.katalon.core.testcase.TestCase as TestCase
 import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
+import com.kms.katalon.core.testobject.ConditionType
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
@@ -19,14 +20,12 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.click(findTestObject('Object Repository/buzz/menu_Buzz'))
 
-WebUI.click(findTestObject('Object Repository/buzz/btn_Shares Video'))
+WebUI.click(findTestObject('Object Repository/buzz/icon_threeDot'))
 
-WebUI.setText(findTestObject('Object Repository/buzz/dialog_textareaPost'), 'test')
+WebUI.click(findTestObject('buzz/btn_Edit Post'))
 
-url = "https://www.youtube.com/watch?v=PVUCnmnHI8s"
+WebUI.verifyElementPresent(findTestObject('Object Repository/buzz/dialog'), 0)
 
-WebUI.setText(findTestObject('Object Repository/buzz/input_URL'), url)
+WebUI.click(findTestObject('Object Repository/buzz/icon_X (close)'))
 
-WebUI.click(findTestObject('Object Repository/buzz/btn_Share'))
-
-WebUI.verifyElementText(findTestObject('general/toast'), 'Successfully Saved')
+WebUI.verifyElementNotPresent(findTestObject('Object Repository/buzz/dialog'), 0)

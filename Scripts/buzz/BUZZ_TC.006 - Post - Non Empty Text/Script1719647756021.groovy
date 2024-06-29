@@ -30,4 +30,4 @@ WebUI.setText(findTestObject('Object Repository/buzz/textarea_Post'), text)
 
 WebUI.click(findTestObject('Object Repository/buzz/btn_Post'))
 
-WebUI.verifyElementText(findTestObject('Object Repository/toast'), "Successfully Saved")
+WebUI.verifyElementText(findTestObject('general/toast'), "Successfully Saved")

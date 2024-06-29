@@ -36,4 +36,4 @@ WebUI.uploadFile(findTestObject('Object Repository/buzz/addPhotos'), file2)
 
 WebUI.click(findTestObject('Object Repository/buzz/btn_Share'))
 
-WebUI.verifyElementText(findTestObject('Object Repository/toast'), 'Successfully Saved')
+WebUI.verifyElementText(findTestObject('general/toast'), 'Successfully Saved')

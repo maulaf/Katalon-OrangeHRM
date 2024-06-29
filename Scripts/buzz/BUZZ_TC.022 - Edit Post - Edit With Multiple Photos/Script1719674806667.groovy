@@ -3,7 +3,8 @@ import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
-import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
+import com.kms.katalon.core.checkpoint.Checkpoint
+import com.kms.katalon.core.configuration.RunConfiguration
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
 import com.kms.katalon.core.model.FailureHandling as FailureHandling
@@ -17,16 +18,23 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.click(findTestObject('Object Repository/buzz/menu_Buzz'))
+CustomKeywords.'buzz.buzzKeyword.createPost'()
 
-WebUI.click(findTestObject('Object Repository/buzz/btn_Shares Video'))
+WebUI.click(findTestObject('Object Repository/buzz/icon_threeDot'))
 
-WebUI.setText(findTestObject('Object Repository/buzz/dialog_textareaPost'), 'test')
+WebUI.click(findTestObject('buzz/btn_Edit Post'))
 
-url = "https://www.youtube.com/watch?v=PVUCnmnHI8s"
+def dirProject = RunConfiguration.getProjectDir()
 
-WebUI.setText(findTestObject('Object Repository/buzz/input_URL'), url)
+def file = dirProject + '/Test Data/wallpaper.jpg'
 
-WebUI.click(findTestObject('Object Repository/buzz/btn_Share'))
+def file2 = dirProject + '/Test Data/wallpaper2.jpg'
 
-WebUI.verifyElementText(findTestObject('general/toast'), 'Successfully Saved')
+WebUI.uploadFile(findTestObject('Object Repository/buzz/addPhotos'), file)
+
+WebUI.uploadFile(findTestObject('Object Repository/buzz/addPhotos'), file2)
+
+
+WebUI.click(findTestObject('Object Repository/buzz/dialog_btnPost'))
+
+WebUI.verifyElementText(findTestObject('general/toast'), "Successfully Updated")

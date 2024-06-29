@@ -3,7 +3,8 @@ import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
-import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
+import com.kms.katalon.core.checkpoint.Checkpoint
+import com.kms.katalon.core.configuration.RunConfiguration
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
 import com.kms.katalon.core.model.FailureHandling as FailureHandling
@@ -17,16 +18,18 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.click(findTestObject('Object Repository/buzz/menu_Buzz'))
+CustomKeywords.'buzz.buzzKeyword.createPost'()
 
-WebUI.click(findTestObject('Object Repository/buzz/btn_Shares Video'))
+WebUI.click(findTestObject('Object Repository/buzz/icon_threeDot'))
 
-WebUI.setText(findTestObject('Object Repository/buzz/dialog_textareaPost'), 'test')
+WebUI.click(findTestObject('buzz/btn_Edit Post'))
 
-url = "https://www.youtube.com/watch?v=PVUCnmnHI8s"
+WebUI.click(findTestObject('Object Repository/buzz/icon_X_deletePhotos'))
 
-WebUI.setText(findTestObject('Object Repository/buzz/input_URL'), url)
+def dirProject = RunConfiguration.getProjectDir()
 
-WebUI.click(findTestObject('Object Repository/buzz/btn_Share'))
+def file = dirProject + '/Test Data/dummy.pdf'
 
-WebUI.verifyElementText(findTestObject('general/toast'), 'Successfully Saved')
+WebUI.uploadFile(findTestObject('Object Repository/buzz/addPhotos'), file)
+
+WebUI.verifyTextPresent("Only 'gif', 'png', 'jpg', 'jpeg' type images are allowed!", false)

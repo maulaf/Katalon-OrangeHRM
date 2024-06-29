@@ -19,14 +19,12 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.click(findTestObject('Object Repository/buzz/menu_Buzz'))
 
-WebUI.click(findTestObject('Object Repository/buzz/btn_Shares Video'))
+WebUI.click(findTestObject('Object Repository/buzz/icon_threeDot'))
 
-WebUI.setText(findTestObject('Object Repository/buzz/dialog_textareaPost'), 'test')
+WebUI.click(findTestObject('Object Repository/buzz/btn_Delete Post'))
 
-url = "https://www.youtube.com/watch?v=PVUCnmnHI8s"
+WebUI.verifyTextPresent("The selected item will be permanently deleted. Are you sure you want to continue?", false)
 
-WebUI.setText(findTestObject('Object Repository/buzz/input_URL'), url)
+WebUI.click(findTestObject('Object Repository/general/btn_No Cancel'))
 
-WebUI.click(findTestObject('Object Repository/buzz/btn_Share'))
-
-WebUI.verifyElementText(findTestObject('general/toast'), 'Successfully Saved')
+WebUI.verifyTextNotPresent("The selected item will be permanently deleted. Are you sure you want to continue?", false)

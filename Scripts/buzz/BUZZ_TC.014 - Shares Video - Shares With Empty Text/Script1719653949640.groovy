@@ -25,8 +25,8 @@ WebUI.setText(findTestObject('Object Repository/buzz/dialog_textareaPost'), '')
 
 url = "https://www.youtube.com/watch?v=PVUCnmnHI8s"
 
-WebUI.setText(findTestObject('Object Repository/buzz/dialog_textareaPost'), url)
+WebUI.setText(findTestObject('Object Repository/buzz/input_URL'), url)
 
 WebUI.click(findTestObject('Object Repository/buzz/btn_Share'))
 
-WebUI.verifyElementText(findTestObject('Object Repository/toast'), 'Successfully Saved')
+WebUI.verifyElementText(findTestObject('general/toast'), 'Successfully Saved')
