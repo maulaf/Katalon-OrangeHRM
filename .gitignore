@@ -14,5 +14,23 @@ build
 .classpath
 
 .project
+/bin/
+/Libs/
+/.settings/
+/.classpath
+.svn/
 
+/bin/
+/Libs/
+/.settings/
+.classpath
+.svn/
+Reports/
 .prj
+.project
+.cache/
+.Test Suites
+/build.gradle
+/appium.log
+/BDD.prj
+/console.properties
