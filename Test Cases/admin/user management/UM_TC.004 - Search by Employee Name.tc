@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>UM_TC.004 - Search by Employee Name</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>fb95b2d8-5487-4336-835f-cf6251211d07</testCaseGuid>
+</TestCaseEntity>

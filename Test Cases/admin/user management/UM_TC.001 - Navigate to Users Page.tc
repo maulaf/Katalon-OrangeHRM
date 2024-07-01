@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>UM_TC.001 - Navigate to Users Page</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ba1254bd-ef14-407a-860f-d55cce729632</testCaseGuid>
+</TestCaseEntity>
