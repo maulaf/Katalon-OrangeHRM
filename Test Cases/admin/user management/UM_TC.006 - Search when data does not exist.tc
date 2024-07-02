@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>UM_TC.006 - Search when data does not exist</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>cfb14196-874c-4d21-8ad9-21548a8c18d1</testCaseGuid>
+</TestCaseEntity>

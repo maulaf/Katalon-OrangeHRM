@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>UM_TC.008 - Sort by Username ASC</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>bd5596d3-6e6b-43ec-99c4-099218be0fc1</testCaseGuid>
+</TestCaseEntity>

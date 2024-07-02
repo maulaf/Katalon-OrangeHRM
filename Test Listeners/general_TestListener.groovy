@@ -38,7 +38,7 @@ class general_TestListener {
 	 */
 	@AfterTestCase
 	def sampleAfterTestCase(TestCaseContext testCaseContext) {
-		WebUI.takeFullPageScreenshot()
+		WebUI.takeScreenshot()
 		WebUI.closeBrowser()
 	}
 
