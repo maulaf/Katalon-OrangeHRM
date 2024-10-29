@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>JOB_TC.008 - Add - Upload File Exceeding 1 MB in Job Specification Field</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>904a6507-8ef8-4a32-ba41-0f618bcb46bc</testCaseGuid>
+</TestCaseEntity>

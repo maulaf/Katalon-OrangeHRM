@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>JOB_TC.004 - Add - Save with Empty Job Descriptions</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>bc463f1a-f6e0-4a1b-aae3-1114f2f701df</testCaseGuid>
+</TestCaseEntity>
