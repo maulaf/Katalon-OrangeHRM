@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PG_TC.003 - Add - Save with Empty Name</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>12136166-9060-4f50-b995-4fa082bba930</testCaseGuid>
+</TestCaseEntity>
